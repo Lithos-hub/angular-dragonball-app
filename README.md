@@ -2,6 +2,10 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
+- Esta aplicación ha sido desarrollada por mí desde cero usando Angular 9. Obviamente, no pretendo comerciar con ella, simplemente la uso como material didáctico para aprender y practicar con Angular.
+
+- Actualmente se encuentra en fase de desarrollo y seguiré actualizando y añadiendo nuevas características como la API de The Movie DB y alguna sección interactiva.
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
