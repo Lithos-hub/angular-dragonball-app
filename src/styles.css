@@ -1,0 +1,117 @@
+    /* Animaciones */
+    
+    .animated {
+        -webkit-animation-duration: 1.5s;
+        animation-duration: 1.5s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    
+    .fast {
+        -webkit-animation-duration: 0.7s;
+        animation-duration: 0.7s;
+        -webkit-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+    
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    .fadeIn {
+        animation-name: fadeIn;
+    }
+    /*  Elementos */
+    
+    body {
+        padding-bottom: 50px;
+    }
+    
+    .jumbotron {
+        background-color: #efa732;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    
+    #wallAbout {
+        position: relative;
+    }
+    
+    #wall:hover {
+        -webkit-filter: sepia(70%);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+    
+    .sepia {
+        -webkit-filter: sepia(70%);
+    }
+    
+    #logos {
+        display: block;
+        margin: auto;
+        width: 100%;
+        padding: 15px;
+    }
+    
+    #jumboHome {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(assets/img/jumbotronwall.jpg);
+        background-position: 50%;
+        background-size: cover;
+    }
+    
+    #jumboAbout {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(assets/img/jumbotronwall2.jpg);
+        background-size: cover;
+        height: 800px;
+        padding-top: 200px;
+        background-position: center;
+        border-bottom: 5px solid black;
+    }
+    
+    #jumbosPaginas {
+        text-align: center;
+        height: 100px;
+        bottom: 0;
+        margin: 0 auto;
+        position: relative;
+    }
+    
+    .portada {
+        background-color: #efa732;
+        padding-top: 20px;
+        padding-bottom: 40px;
+        margin: 0;
+    }
+    
+    #volumenBoton {
+        background-color: transparent;
+        border-style: hidden;
+        position: relative;
+        color: #efa732;
+        cursor: pointer;
+    }
+    
+    #volumenBoton:focus {
+        outline: none;
+        box-shadow: none;
+    }
+    
+    #reproductor {
+        background-color: #efa732;
+        margin-top: 50px;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+    
+    #textoSagas {
+        padding-top: 100px;
+        padding-bottom: 200px;
+        bottom: 0;
+    }

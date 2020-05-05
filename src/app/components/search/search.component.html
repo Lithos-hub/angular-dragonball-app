@@ -1,0 +1,24 @@
+<div class="jumbotron jumbotron-fluid animated fadeIn fast" style="margin-bottom:50px;">
+    <h1 class="text-dark text-center" style="padding-top:10px;padding-bottom:10px;margin: 0 auto;">Buscando...<br><small> " {{ termino }} "</small></h1>
+</div>
+
+
+<div row>
+    <div class="col-md-12">
+        <div class="alert alert-danger animated fadeIn fast text-center" style="width: 400px; margin: auto; margin-bottom: 50px;" *ngIf="personajes.length == 0" role="alert">
+            Lo sentimos. Ha sido imposible encontrar resultados con: "{{ termino }}"
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="card-columns animated fadeIn fast ">
+
+        <app-personaje-tarjeta [personaje]="personaje" [index]="personaje.idx" *ngFor="let personaje of personajes"></app-personaje-tarjeta>
+
+    </div>
+</div>
+
+<div class="container-fluid text-center">
+    <a href="personajes" class="btn btn-outline-danger" style="text-align: center; margin:auto; width: 200px;">Regresar</a>
+</div>

@@ -1,0 +1,11 @@
+<!-- *ngFor="let personaje of personajes; let i = index" -->
+<div class="card">
+    <img [src]="personaje.img" [alt]="personaje.nombre" class="card-img-top" style="object-fit: contain; max-height: 350px;">
+    <div class="card-body">
+        <h3 class="card-title text-center"> {{ personaje.nombre | uppercase }} <br><small>{{ personaje.saga }}</small></h3>
+        <p class="card-text text-justify "> {{ personaje.bio }} </p>
+
+        <button (click)="verPersonaje()" type="button" class="btn btn-outline-warning btn-block text-dark ">Ver más...</button>
+
+    </div>
+</div>
