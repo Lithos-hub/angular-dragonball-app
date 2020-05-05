@@ -2,9 +2,16 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.1.
 
+// Español //
 - Esta aplicación ha sido desarrollada por mí desde cero usando Angular 9. Obviamente, no pretendo comerciar con ella, simplemente la uso como material didáctico para aprender y practicar con Angular.
 
-- Actualmente se encuentra en fase de desarrollo y seguiré actualizando y añadiendo nuevas características como la API de The Movie DB y alguna sección interactiva.
+- Actualmente se encuentra en fase de desarrollo y seguiré actualizando y añadiendo nuevas características como la API de The Movie DB y alguna sección interactiva o posibilidad de cambiar de idioma.
+
+// Inglés //
+- This application has been developed by me from scratch using Angular 9. Obviously, I don't intend to trade with it, I just use it as teaching material to learn and practice with Angular.
+
+- It is currently under development and I will continue to update and add new features such as The Movie DB API and some interactive section or possibility to change language.
+
 
 ## Development server
 
