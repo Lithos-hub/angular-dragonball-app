@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
-// import { PeliculasService } from './services/peliculas.service';
+// import { PeliculasdbzService } from './services/peliculasdbz.service';
+// import { PeliculasdbService } from './services/peliculasdb.service';
 
 @Component({
   selector: 'app-root',
@@ -9,9 +10,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'dragonballapp';
 
-  // constructor(public _ps: PeliculasService){
+  constructor( ) {}
 
-  //   this._ps.getPeliculas()
-  //       .subscribe( data => console.log(data) )
-  // }
 }

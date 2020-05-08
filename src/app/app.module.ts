@@ -9,6 +9,13 @@ import { APP_ROUTING } from './app.routes';
 
 // Servicios
 import { PersonajesService } from './services/personajes.service';
+import { PeliculasdbzService } from './services/peliculasdbz.service';
+import { PeliculasdbService } from './services/peliculasdb.service';
+
+
+// Pipes 
+import { PeliculadbImagenPipe } from './pipes/peliculadb-imagen.pipe';
+
 
 // Components
 
@@ -27,7 +34,7 @@ import { PeliculasComponent } from './components/peliculas/peliculas.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular Material
-import {MatSliderModule} from '@angular/material/slider';
+import { MatSliderModule } from '@angular/material/slider';
 
 
 @NgModule({
@@ -43,7 +50,8 @@ import {MatSliderModule} from '@angular/material/slider';
     PersonajeComponent,
     SearchComponent,
     PersonajeTarjetaComponent,
-    PeliculasComponent
+    PeliculasComponent,
+    PeliculadbImagenPipe
   ],
   imports: [
     BrowserModule,
@@ -55,7 +63,7 @@ import {MatSliderModule} from '@angular/material/slider';
     MatSliderModule,
     NgxAudioPlayerModule
   ],
-  providers: [ PersonajesService ],
+  providers: [ PersonajesService, PeliculasdbzService, PeliculasdbService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
