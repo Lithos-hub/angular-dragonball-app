@@ -20,7 +20,15 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 - None of the images and music that appear belong to me.
 
+# Actualizaciones
 
+- Version 1.1 
+    * Servicio API de The Movie DB en la sección /peliculas
+    
+# Updates
+
+- Version 1.1 
+    * The Movie DB API service in /peliculas section
 
 ## Development server
 
