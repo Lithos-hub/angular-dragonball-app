@@ -9,6 +9,26 @@
             una vez más con Nozawa como Gokū y Kusao como Trunks, además de Yūko Minaguchi como Pan.</p>
     </div>
 
+
+    <br>
+    <hr>
+    <h1 class="display-4 text-center">Galería</h1>
+    <hr>
+    <br>
+
+    <div class="container" style="padding-bottom: 50px;">
+
+        <div class="card-columns">
+
+            <div class="card" *ngFor="let imagen of imagenes">
+                <img class="card-img-top" [src]="imagen.imgdbgt" alt="Card image cap">
+            </div>
+
+
+        </div>
+
+    </div>
+
     <div id="reproductor">
         <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [autoPlay]="true" [displayVolumeControls]="true"></mat-basic-audio-player>
     </div>

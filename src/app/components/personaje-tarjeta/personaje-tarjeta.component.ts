@@ -12,7 +12,7 @@ export class PersonajeTarjetaComponent implements OnInit {
 
   @Output() personajeSeleccionado: EventEmitter<number>;
 
-  constructor( private router: Router) { 
+  constructor( private router: Router) {
     this.personajeSeleccionado = new EventEmitter();
   }
 

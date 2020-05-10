@@ -8,10 +8,24 @@
             el 31 de enero de 1996.</p>
     </div>
 
-    <hr><br>
-    <h1 class="display-4">Galería</h1>
+    <br>
+    <hr>
+    <h1 class="display-4 text-center">Galería</h1>
+    <hr>
+    <br>
+
+    <div class="container" style="padding-bottom: 50px;">
+
+        <div class="card-columns">
+
+            <div class="card" *ngFor="let imagen of imagenes">
+                <img class="card-img-top" [src]="imagen.imgdbz" alt="Card image cap">
+            </div>
 
 
+        </div>
+
+    </div>
 
     <div id="reproductor">
         <mat-basic-audio-player [audioUrl]="msbapAudioUrl" [autoPlay]="true" [displayVolumeControls]="true"></mat-basic-audio-player>

@@ -32,7 +32,7 @@ export class PeliculasComponent implements OnInit {
                 console.log( data.parts );
                 this.peliculasdb = data.parts; });
 
-                
+
 
   }
 

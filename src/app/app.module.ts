@@ -11,6 +11,7 @@ import { APP_ROUTING } from './app.routes';
 import { PersonajesService } from './services/personajes.service';
 import { PeliculasdbService } from './services/peliculasdb.service';
 import { PeliculasdbzService } from './services/peliculasdbz.service';
+import { ImagenesGaleriasService } from './services/imagenes-galerias.service';
 
 
 
@@ -64,7 +65,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatSliderModule,
     NgxAudioPlayerModule
   ],
-  providers: [ PersonajesService, PeliculasdbzService, PeliculasdbService ],
+  providers: [ PersonajesService, PeliculasdbzService, PeliculasdbService, ImagenesGaleriasService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
