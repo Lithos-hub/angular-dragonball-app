@@ -2,8 +2,7 @@
     <h1 class="text-dark text-center" style="padding-top:10px;margin: 0 auto;">Películas y OVAs<br><br> <img src="assets/img/dmdb.png " class="card-img" style="height:50px; width: auto; border-radius: 10px;"></h1>
 </div>
 
-<div class="container">
-
+<div class="container" *ngIf="peliculasdb">
 
     <!-- DRAGON BALL -->
 
@@ -12,516 +11,57 @@
     </div>
     <hr>
 
+    <!-- <app-ficha-peliculas *ngFor="let pelicula of peliculasdb" [index]="i"></app-ficha-peliculas> -->
 
-    <div class="card mb-3">
+    <div class="card mb-3" *ngFor="let peliculas of peliculasdb">
         <div class=" row no-gutters ">
             <div class="col-md-3 ">
-                <img src="assets/img/db1.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasdb.parts[2].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasdb.parts[2].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasdb.parts[2].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasdb.parts[2].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/db2.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasdb.parts[1].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasdb.parts[1].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasdb.parts[1].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasdb.parts[1].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/db3.jpg " class="card-img" style="max-height:350px; width: auto;">
+                <img [src]="url + peliculas.poster_path" class="card-img" style="height:350px; width: auto;">
             </div>
             <div class=" col-md-9 ">
-                <div class="card-body">
-                    <h5 class="card-title ">{{ peliculasdb.parts[0].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasdb.parts[0].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasdb.parts[0].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasdb.parts[0].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/db4.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
                 <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasdb.parts[3].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasdb.parts[3].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasdb.parts[3].release_date | date:'yyyy'}}</small></p>
+                    <h5 class="card-title ">{{ peliculas.title }}</h5>
+                    <p class="card-text text-justify ">{{ peliculas.overview }}</p>
+                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculas.release_date | date:'yyyy'}}</small></p>
                     <br>
                     <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasdb.parts[3].vote_average }} / 10 </small></p>
+                    <p class="card-text "><small class="lead ">Puntuación: {{ peliculas.vote_average }} / 10 </small></p>
 
                 </div>
             </div>
         </div>
     </div>
 
+</div>
 
-    <!-- DRAGON BALL Z -->
+<!-- DRAGON BALL Z -->
 
-    <div class="text-center">
-        <h1 class="display-4"><img src="assets/img/bola-dragon.png" width="50px" height="auto" style="padding-bottom: 10px;"> Dragon Ball Z <img src="assets/img/radar.png" width="60px" height="auto" style="padding-bottom: 10px;"> </h1>
+<div class="container " *ngIf="peliculasz ">
+
+
+    <div class="text-center ">
+        <h1 class="display-4 "><img src="assets/img/bola-dragon.png " width="50px " height="auto " style="padding-bottom: 10px; "> Dragon Ball Z / GT <img src="assets/img/radar.png " width="60px " height="auto " style="padding-bottom: 10px; "> </h1>
     </div>
 
     <hr>
 
-
-    <div class="card mb-3">
+    <div class="card mb-3" *ngFor="let peliculas of peliculasz">
         <div class=" row no-gutters ">
             <div class="col-md-3 ">
-                <img src="assets/img/dbz1.jpg " class="card-img" style="max-height:350px; width: auto;">
+                <img [src]="url + peliculas.poster_path" class="card-img" style="height:350px; width: auto;">
             </div>
             <div class=" col-md-9 ">
-                <div class="card-body">
-                    <h5 class="card-title ">{{ peliculasz.parts[0].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[0].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[0].release_date | date:'yyyy'}}</small></p>
+                <div class="card-body ">
+                    <h5 class="card-title ">{{ peliculas.title }}</h5>
+                    <p class="card-text text-justify ">{{ peliculas.overview }}</p>
+                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculas.release_date | date:'yyyy'}}</small></p>
                     <br>
                     <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[0].vote_average }} / 10 </small></p>
+                    <p class="card-text "><small class="lead ">Puntuación: {{ peliculas.vote_average }} / 10 </small></p>
 
                 </div>
             </div>
         </div>
     </div>
-
-    <div></div>
-
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz2.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[1].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[1].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[1].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[1].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz3.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[2].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[2].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[2].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[2].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz4.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[3].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[3].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[3].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[3].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz5.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[4].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[4].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[4].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[4].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz6.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[5].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[5].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[5].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[5].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz7.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[6].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[6].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[6].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[6].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz8.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[7].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[7].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[7].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[7].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz9.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[8].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[8].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[8].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[8].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz10.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[9].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[9].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[9].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[9].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz11.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[10].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[10].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[10].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[10].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz12.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[11].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[11].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[11].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[11].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz13.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[12].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[12].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[12].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[12].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz14.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[13].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[13].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[13].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[13].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz15.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[14].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[14].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[14].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[14].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz16.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[15].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[15].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[15].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[15].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz17.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[16].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[16].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[16].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[16].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz18.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[17].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[17].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[17].release_date | date:'yyyy'}}</small></p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz19.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[18].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[18].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[18].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[18].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz20.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[19].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[19].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[19].release_date | date:'yyyy'}}</small></p>
-                </div>
-            </div>
-        </div>
-    </div> -->
-
-    <!-- DRAGON BALL GT -->
-
-    <div class="text-center">
-        <h1 class="display-4"><img src="assets/img/bola-dragon.png" width="50px" height="auto" style="padding-bottom: 10px;"> Dragon Ball GT <img src="assets/img/radar.png" width="60px" height="auto" style="padding-bottom: 10px;"> </h1>
-    </div>
-
-    <hr>
-
-    <div class="card mb-3">
-        <div class=" row no-gutters ">
-            <div class="col-md-3 ">
-                <img src="assets/img/dbz21.jpg " class="card-img" style="height:350px; width: auto;">
-            </div>
-            <div class="col-md-9 ">
-                <div class="card-body ">
-                    <h5 class="card-title ">{{ peliculasz.parts[20].title }}</h5>
-                    <p class="card-text text-justify ">{{ peliculasz.parts[20].overview }}</p>
-                    <p class="card-text "><small class="text-muted ">Año de lanzamiento: {{ peliculasz.parts[20].release_date | date:'yyyy'}}</small></p>
-                    <br>
-                    <br>
-                    <p class="card-text "><small class="lead">Puntuación: {{ peliculasz.parts[20].vote_average }} / 10 </small></p>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>

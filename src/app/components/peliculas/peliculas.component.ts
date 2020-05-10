@@ -9,26 +9,30 @@ import { PeliculasdbzService } from '../../services/peliculasdbz.service';
 })
 export class PeliculasComponent implements OnInit {
 
+  url = 'https://image.tmdb.org/t/p/w500';
 
+  peliculasdb: any[] = [];
+  peliculasz: any[] = [];
 
-  peliculasdb: any;
-  peliculasz: any;
 
   constructor(
                // tslint:disable-next-line: variable-name
                public _ps: PeliculasdbzService,
                // tslint:disable-next-line: variable-name
-               public _pdbs: PeliculasdbService) {
+               public _pdbs: PeliculasdbService,
+               ) {
 
               this._ps.getPeliculasZ()
-                .subscribe( data => {
-                console.log ( data );
-                this.peliculasz = data; });
+                .subscribe( (data: any) => {
+                console.log ( data.parts );
+                this.peliculasz = data.parts; });
 
               this._pdbs.getPeliculasDB()
-               .subscribe( data => {
-                console.log( data );
-                this.peliculasdb = data; });
+               .subscribe( (data: any) => {
+                console.log( data.parts );
+                this.peliculasdb = data.parts; });
+
+                
 
   }
 

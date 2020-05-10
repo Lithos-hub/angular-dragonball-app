@@ -5,19 +5,18 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class PeliculadbImagenPipe implements PipeTransform {
 
-  transform(peliculasdb: any): any {
+  transform( pelicula: any): any {
 
-    const url = "https://image.tmdb.org/t/p/w500";
+    let url = 'https://image.tmdb.org/t/p/w500';
 
-    if ( peliculasdb.parts.backdrop_path) {
-      return url + peliculasdb.parts[0].backdrop_path;
-    }else {
-      if ( peliculasdb.parts.poster_path){
-        return url + peliculasdb.parts.poster_path;
-      }else{
-        return "assets/img/no-image.png";
+    if ( pelicula.poster_path ){
+      return url + pelicula.poster_path;
+    }else{
+      if ( pelicula.backdrop_path ){
+        return url + pelicula.backdrop_path;
       }
+    }
+
     }
   }
 
-}

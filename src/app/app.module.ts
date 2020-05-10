@@ -9,11 +9,12 @@ import { APP_ROUTING } from './app.routes';
 
 // Servicios
 import { PersonajesService } from './services/personajes.service';
-import { PeliculasdbzService } from './services/peliculasdbz.service';
 import { PeliculasdbService } from './services/peliculasdb.service';
+import { PeliculasdbzService } from './services/peliculasdbz.service';
 
 
-// Pipes 
+
+// Pipes
 import { PeliculadbImagenPipe } from './pipes/peliculadb-imagen.pipe';
 
 

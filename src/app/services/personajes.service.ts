@@ -28,7 +28,7 @@ export class PersonajesService {
         },
         {
           nombre: 'Son Gohanda',
-          nombrejapones:'孫そん悟ご飯はん',
+          nombrejapones: '孫そん悟ご飯はん',
           bio: 'En los principios de Dragon Ball Z, Gohan tenía el pelo largo por atrás, y usaba un sombrero rojo que tenía la esfera del dragón de cuatro estrellas, junto con una túnica amarilla con el Kanji Son (孫) estampada por enfrente, un vestido de una sola pieza de color verde cuyas mangas son de color blanco, y zapatos idénticos a los de su padre. Luego, durante su entrenamiento con Piccolo, Gohan usaba un traje parecido al de Goku, con la diferencia de que tiene el Kanji "Ma" (魔; demonio, insignia de Piccolo) en lugar del símbolo de la tortuga y una espada, hasta que finalmente fue cambiado por un traje similar al de Piccolo.',
           img: 'assets/img/gohan-child2.png',
           saga: '(Saga Freezer)'
@@ -38,12 +38,12 @@ export class PersonajesService {
           nombrejapones: 'クリリン',
           bio: 'Es valiente y lleno de recursos, junto con Yamcha, se adaptó a una vida relativamente mas normal que muchos de sus amigos, buscando mujeres en su vida. Está entre los seres humanos más "normales" de sus compañeros, ya que puede ser visto usando ropa casual en los momentos de paz, además de su típico Uniforme de la Escuela Tortuga, además de participar en otras actividades cotidianas y posteriormente conseguirse un trabajo. Como el mejor amigo de Goku, Kurilín fue uno de los pocos en conservar un rol destacado durante la historia, incluso personajes como Yamcha, Tenshinhan, Chaoz, Yajirobe, entre otros, quedaron atrás. En general, Kurilín es un personaje muy valorado en todo Dragon Ball: poderoso, leal y audaz; siendo el segundo personaje con mayor de apariciones en el manga. Asimismo, es el Artista Marcial Terrícola más versátil y experimentando, con un gran arsenal de técnicas tan amplias como los saiyanos, recurriendo a estrategias que pueden llevarlo a vencer a Son Gohan de adulto en forma base durante un entrenamiento.',
           img: 'assets/img/krillin1.png',
-          saga: ''
+          saga: '(Saga Saiyans / Freezer)'
         },
         {
           nombre: 'Krillin',
           nombrejapones: 'クリリン',
-          bio: 'Es valiente y lleno de recursos, junto con Yamcha, se adaptó a una vida relativamente mas normal que muchos de sus amigos, buscando mujeres en su vida. Está entre los seres humanos más "normales" de sus compañeros, ya que puede ser visto usando ropa casual en los momentos de paz, además de su típico Uniforme de la Escuela Tortuga, además de participar en otras actividades cotidianas y posteriormente conseguirse un trabajo. Como el mejor amigo de Goku, Kurilín fue uno de los pocos en conservar un rol destacado durante la historia, incluso personajes como Yamcha, Tenshinhan, Chaoz, Yajirobe, entre otros, quedaron atrás. En general, Kurilín es un personaje muy valorado en todo Dragon Ball: poderoso, leal y audaz; siendo el segundo personaje con mayor de apariciones en el manga. Asimismo, es el Artista Marcial Terrícola más versátil y experimentando, con un gran arsenal de técnicas tan amplias como los saiyanos, recurriendo a estrategias que pueden llevarlo a vencer a Son Gohan de adulto en forma base durante un entrenamiento.',
+          bio: 'En la saga de Boo, a Krillin le crece el pelo negro y lleva varios trajes informales. Cuando se casó con C-18, lleva una camisa naranja de manga corta y botones sueltos, pantalones cortos blancos y sandalias rojas. En el 25º Torneo Mundial de Artes Marciales, aparece por primera vez con un chaleco naranja con una camiseta blanca de manga corta, pantalones cortos de mezclilla verdes con un cinturón marrón en la cintura, calcetines blancos y zapatos marrones.',
           img: 'assets/img/krillin2.png',
           saga: '(Saga Boo)'
         },
@@ -81,6 +81,41 @@ export class PersonajesService {
           bio: 'Chaoz es muy tranquilo, pero es muy valiente y se preocupa mucho por su amigo Tenshinhan. Normalmente siempre se lo ve acompañando a Tenshinhan, incluso en ocasiones donde Tenshinhan le dice que es muy peligroso que lo acompañe. También es un poco infantil, como se lo ve en su lucha contra Krilin.',
           img: 'assets/img/chaoz.png',
           saga: ''
+        },
+        {
+          nombre: 'Goten',
+          nombrejapones: '孫そん悟ご天てん',
+          bio: 'En su infancia, Goten es un niño bondadoso, amante de la diversión y un tanto ingenuo como su padre. También es un poco revoltoso, debido a la influencia de su mejor amigo Trunks y uniéndose a él en muchas de sus travesuras. Entre Trunks y él, es sorprendentemente la voz de la razón, aunque por lo general sigue las ideas del primero. Goten también es muy educado, ya que siempre hace una reverencia antes de enfrentarse a alguien en una pelea. Él admira mucho a su hermano mayor Gohan (además de ser la única persona que en su momento no encontraba vergonzoso el traje de El Gran Saiyaman, pensando que este es "Genial"), aunque tiempo más tarde éste le rechaza a Gohan el traje de El Gran Saiyaman reconociendo que es un traje ridículo.',
+          img: 'assets/img/goten.png',
+          saga: '(Saga Boo)'
+        },
+        {
+          nombre: 'Trunks niño',
+          nombrejapones: 'トランクス',
+          bio: 'Cuando niño, Trunks demuestra una personalidad muy parecida a la de Vegeta a quien respeta y ve como modelo a seguir. Está muy orgulloso de su padre y desde temprana edad entrena para ser tan fuerte como él. A pesar de su entrenamiento con Vegeta, aún no domina cosas tan básicas como seguir al enemigo mediante su ki, debido a que prefiere pasar más tiempo con Bulma. Su mejor amigo es Goten y entre ambos disfrutan de entrenamientos, juegos y travesuras, incluso mantienen por algún tiempo el secreto de que pueden convertirse en Super Saiyan. A pesar de tener un año de diferencia, Trunks tiene mayor madurez que Goten y siempre consigue que este le crea y lo siga en sus juegos. En las películas se muestra que le gustaría tener un hermano mayor, asumiendo Tapion el rol por un breve tiempo. Él se niega a respetar a alguien que no le gusta, característica que comparte con su padre, como cuando ve a Goku por primera vez, aunque luego cambia su opinión al verlo transformado en un Super Saiyan. En el Torneo Mundial de las Artes Marciales se le ve igual que su padre, luchando con calma e insultando a su rivales, excepto contra Goten. Muchas veces demuestra su alto conocimiento científico, característica que obtiene de su madre y abuelo. Su comida favorita es carne a la parrilla y disfruta de la las carreras de coches. Debido a que creció en un mundo pacífico y sin preocupaciones, Trunks es muy diferente de su contraparte del futuro. También tienen un poco de diferencias en cuanto a personalidad, mientras que Trunks del presente es presumido y arrogante como su padre, Trunks del Futuro no lo es, siéndolo menos después de la muerte de Bulma del futuro. Otra gran diferencia es que Trunks del Futuro es capaz de ver a través de tácticas enemigas y adaptarse a las estrategias de juego, algo que Trunks del presente no es capaz de hacer en Dragon Ball Z, Dragon Ball Super o Dragon Ball GT.',
+          img: 'assets/img/trunks-kid.png',
+          saga: '(Saga Boo)'
+        },
+        {
+          nombre: 'Videl',
+          nombrejapones: 'ビーデル',
+          bio: 'Videl se caracteriza por ser una joven enérgica y tenaz con un enorme sentido de la justicia, reforzado por el hecho de que ayuda a la policía de Ciudad Satán en la lucha contra el crimen con los cuales guarda una estrecha relación. Su relación con su padre es bastante notoria a pesar de que ella vive avergonzada en cierto modo de las locuras de su padre y el hecho de haberle mentido al mundo tras lo ocurrido con Cell. En un principio, a pesar de tener una apariencia inocente y hermosa, presenta una personalidad algo bastante presumida y temperamental, con una actitud arrogante y desafiante, demostrando tener mucha confianza en sí misma, llegando a sentir celos del Gran Saiyaman cuando este comenzó a arrebatarle la resolución de los conflictos en Ciudad Satán. Aunque logró forjar una buena reputación regodeada por la fama, es claramente muy sensible (de hecho llegó a llorar cuando Spopovich estaba dándole una paliza y la tenía al borde de la muerte, hecho que hizo enfurecer bastante a Gohan y también cuando pensó que el propio Gohan había muerto a manos de Majin-Boo). A medida que la trama avanzaba poco a poco ella empieza a cambiar su personalidad, llegando a ser más amable y más educada en más de un sentido. Este gran cambio se debe a que sin darse cuenta comenzó a tomarle cariño a Gohan, quien gracias a su corazón bondadoso y honesto llegó a enamorarse de él. Más tarde se convierte en la esposa de Gohan y madre de Pan. Como esposa de Gohan, ella es mas cariñosa y maternal con todo el mundo. Teniendo un tono más suave en su voz, dejando muy atrás su personalidad caprichosa demostrada al principio de la historia. También demuestra tener una fe extrema en su esposo, como cuando Barry Kahn mostró unas fotos de Gohan siendo besado por Cocoa Amaguri y fingió consolarla, Videl lo insultó, diciendo que era patético, e indicando que Gohan debía haber tenido una razón para hacer lo que hizo. Más tarde, después de que Gohan derrota a Barry Kahn infectado por Watagash, Videl abraza a Gohan y exclama que lo ama.',
+          img: 'assets/img/videl.png',
+          saga: '(Saga Célula)'
+        },
+        {
+          nombre: 'Mr. Satán',
+          nombrejapones: 'ミスター・サタン',
+          bio: 'En una primera impresión, se da a conocer como un hombre arrogante, presumido, fanfarrón y manipulador, que tiende a justificar sus debilidades y errores con ocurrencias y pretextos. Muestra cobardía cuando se da cuenta de que su adversario es más fuerte que él. Sin embargo, tiene una gran capacidad de improvisación para salir al paso de situaciones difíciles y en el fondo es un hombre de buen corazón que muestra un gran compromiso para ayudar a los suyos. En una conversación con Videl, Piccolo afirma que pese a no tener poderes, Mr. Satán es reconocido como el campeón mundial por su valentía. Tiene la idea de que las Artes Marciales deben brindar un buen espectáculo al público, por lo cual hace demostraciones de fuerza tales como romper una hilera de ladrillos o arrastrar cuatro autobuses con sus brazos (actos ciertamente increíbles a nivel humano, pero que son ridículos para los Guerreros Z); igualmente, para impresionar a sus fans realiza poses y actitudes propias de la lucha libre profesional. Para los humanos, Mr. Satán es el hombre más poderoso del mundo y prueba de ello es que posee el cinturón que lo proclama como Campeón Mundial de las Artes Marciales. Por tanto, es dueño de un gran carisma y autoridad moral sobre la raza humana y estas virtudes fueron aprovechadas para ayudar a los Guerreros Z en situaciones específicas, y a cambio, recibe todo el crédito de los actos heroicos.',
+          img: 'assets/img/mrsatan.png',
+          saga: '(Saga Célula)'
+        },
+        {
+          nombre: 'Kaito',
+          nombrejapones: '餃子 [チャオズ]',
+          bio: 'Son Goku le conoce tras morir por primera vez, en el combate con su hermano Raditz, al encargarle Kami cruzar el camino de la serpiente y entrenarse con Kaiō-sama para prepararse a la llegada de los saiyajin. Tras un largo viaje de más de 100 días, en el que tuvo que recorrer 100.000 kilómetros y hacer una visita al infierno, Son Goku consigue llegar a casa de Kaiō y le pide que le entrene. Pero dado que el joven no especifica en qué disciplina, Kaiō del Norte le hace pasar una prueba en la que tiene que conseguir hacerle reír con un chiste, para demostrar ser merecedor de ello. Una vez superados la prueba y el malentendido, Kaiō del Norte decide entrenar a Son Goku en el tiempo que les queda. Su planeta tiene una fuerza de gravedad, aproximadamente 10 veces superior a la de La Tierra, por lo que su entrenamiento es muy eficaz. Las primeras pruebas que hace pasar a sus discípulos, y por supuesto a Son Goku, son las de conseguir atrapar a Bubbles, y golpear a Gregory con un pesado mazo, para conseguir que se acostumbren a la fuerza de gravedad, y ganen velocidad y resistencia. Cuando Son Goku supera estas pruebas, Kaiō-sama decide entrenarle en técnicas de combate, logrando enseñarle con eficacia el Kaiō Ken y la Genki-dama, dos técnicas de su invención, pero que ni él mismo había conseguido llevar a cabo.',
+          img: 'assets/img/kaito.png',
+          saga: ''
         }
       ];
 
@@ -103,7 +138,7 @@ export class PersonajesService {
 
       for ( let i = 0; i < this.personajes.length; i ++ ){
 
-        let personaje = this.personajes[i];
+        const personaje = this.personajes[i];
 
         const nombre = personaje.nombre.toLowerCase();
         if (nombre.indexOf( termino ) >= 0 ){
