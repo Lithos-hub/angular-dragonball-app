@@ -1,0 +1,12 @@
+<div class="jumbotron jumbotron-fluid animated fadeIn fast" style="margin-bottom:50px;">
+    <h1 class="text-dark text-center" style="padding-top:10px;padding-bottom:10px;margin: 0 auto;">Transformaciones<br><small> Dragon Ball / Z / GT </small></h1>
+</div>
+
+
+<div class="container">
+    <div class="card-columns animated fadeIn fast ">
+
+        <app-transformacion-tarjeta (personajeSeleccionado)="verTransformacion( $event )" [transformacion]="transformacion" [index]="i" *ngFor="let transformacion of transformaciones; let i = index"></app-transformacion-tarjeta>
+
+    </div>
+</div>

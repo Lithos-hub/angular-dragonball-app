@@ -114,3 +114,62 @@
         padding-top: 100px;
         bottom: 0;
     }
+    
+    #imagenPersonaje {
+        object-fit: contain;
+        max-height: 400px;
+    }
+    
+    #tarjetaPersonaje:hover {
+        cursor: pointer;
+        transform: scale(1.1);
+        box-shadow: 0 0 5px black, 0 0 25px #efa732;
+        transition: all 1s ease-in-out;
+        z-index: 99;
+    }
+    
+    #imagenTransformacion {
+        object-fit: contain;
+        max-height: 400px;
+    }
+    
+    #tarjetaTransformacion:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px black, 0 0 25px #efa732;
+        transition: all 1s ease-in-out;
+        z-index: 99;
+    }
+    
+    #etiquetaPersonaje {
+        color: orange;
+        transform: rotate(45deg);
+        left: 20px;
+        top: 0px;
+        position: absolute;
+        border: none;
+    }
+    
+    #etiquetaTransformacion {
+        text-align: center;
+        color: #343A40;
+        transform: rotate(45deg);
+        right: 20px;
+        top: 0px;
+        position: absolute;
+        border: none;
+    }
+    
+    #indicaPersonaje {
+        color: orange;
+        left: 20px;
+        top: 40px;
+        position: absolute;
+    }
+    
+    #indicaTransformacion {
+        text-align: center;
+        color: #343A40;
+        right: 2px;
+        top: 40px;
+        position: absolute;
+    }

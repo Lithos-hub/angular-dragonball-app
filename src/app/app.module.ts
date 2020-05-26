@@ -37,6 +37,9 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 // Angular Material
 import { MatSliderModule } from '@angular/material/slider';
+import { TransformacionesComponent } from './components/transformaciones/transformaciones.component';
+import { TransformacionTarjetaComponent } from './components/transformacion-tarjeta/transformacion-tarjeta.component';
+import { TransformacionesService } from './services/transformaciones.service';
 
 
 @NgModule({
@@ -53,7 +56,9 @@ import { MatSliderModule } from '@angular/material/slider';
     SearchComponent,
     PersonajeTarjetaComponent,
     PeliculasComponent,
-    PeliculadbImagenPipe
+    PeliculadbImagenPipe,
+    TransformacionesComponent,
+    TransformacionTarjetaComponent
   ],
   imports: [
     BrowserModule,
@@ -65,7 +70,7 @@ import { MatSliderModule } from '@angular/material/slider';
     MatSliderModule,
     NgxAudioPlayerModule
   ],
-  providers: [ PersonajesService, PeliculasdbzService, PeliculasdbService, ImagenesGaleriasService ],
+  providers: [ PersonajesService, PeliculasdbzService, PeliculasdbService, ImagenesGaleriasService, TransformacionesService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
